@@ -24,72 +24,44 @@ class Principal extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/widget12');
+                Navigator.pushNamed(context, '/widget1');
               },
-              child: const Text('Widget 12'),
+              child: const Text('Widget 1'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/widget13');
+                Navigator.pushNamed(context, '/widget2');
               },
-              child: const Text('Widget 13'),
+              child: const Text('Widget 2 '),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/widget14');
+                Navigator.pushNamed(context, '/widget3');
               },
-              child: const Text('Widget 14'),
+              child: const Text('Widget 3'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/widget15');
+                Navigator.pushNamed(context, '/widget4');
               },
-              child: const Text('Widget 15'),
+              child: const Text('Widget 4'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/widget16');
+                Navigator.pushNamed(context, '/widget5');
               },
-              child: const Text('Widget 16'),
+              child: const Text('Widget 5'),
             ),
             const SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/widget17');
+                Navigator.pushNamed(context, '/widget6');
               },
-              child: const Text('Widget 17'),
-            ),
-            const SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/widget18');
-              },
-              child: const Text('Widget 18'),
-            ),
-            const SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/widget19');
-              },
-              child: const Text('Widget 19'),
-            ),
-            const SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/widget20');
-              },
-              child: const Text('Widget 20'),
-            ),
-            const SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/widget21');
-              },
-              child: const Text('Widget 21'),
+              child: const Text('Widget 6'),
             ),
           ],
         ),

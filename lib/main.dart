@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'principal.dart';
-import 'widget_doce.dart';
-import 'widget_trece.dart';
-import 'widget_catorce.dart';
-import 'widget_quince.dart';
-import 'widget_dieciseis.dart';
-import 'widget_diecisiete.dart';
-import 'widget_dieciocho.dart';
-import 'widget_diecinueve.dart';
-import 'widget_veinte.dart';
-import 'widget_veintiuno.dart';
+import 'widuno.dart';
+import 'WidDos.dart';
+import 'widtres.dart';
+import 'widcuatro.dart';
+import 'widcinco.dart';
+import 'widseis.dart';
 
 void main() => runApp(MiRutas());
 
@@ -23,16 +19,12 @@ class MiRutas extends StatelessWidget {
       title: 'Rutas entre Widgets',
       routes: {
         '/': (context) => const Principal(), // Widget principal
-        '/widget12': (context) => const WidgetDoce(),
-        '/widget13': (context) => const Widgetrece(),
-        '/widget14': (context) => const WidgetCatorce(),
-        '/widget15': (context) => const Widgetquince(),
-        '/widget16': (context) => const Widgetdieciseis(),
-        '/widget17': (context) => const Widgetdiecisiete(),
-        '/widget18': (context) => const Widgetdieciocho(),
-        '/widget19': (context) => const Widgetdiecinueve(),
-        '/widget20': (context) => const Widgetveinte(),
-        '/widget21': (context) => const Widgetveintiuno(),
+        '/widget1': (context) => const WidUno(),
+        '/widget2': (context) => const WidDos(),
+        '/widget3': (context) => const WidTres(),
+        '/widget4': (context) => const WidCuatro(),
+        '/widget5': (context) => const WidCinco(),
+        '/widget6': (context) => const WidSeis(),
       },
     );
   }

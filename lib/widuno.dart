@@ -1,28 +1,33 @@
 import 'package:flutter/material.dart';
 
-class Widgetdiecisiete extends StatefulWidget {
-  const Widgetdiecisiete({Key? key}) : super(key: key);
+class WidUno extends StatefulWidget {
+  const WidUno({Key? key}) : super(key: key);
 
   @override
-  WidgetdiecisieteState createState() => WidgetdiecisieteState();
+  WidUnoState createState() => WidUnoState();
 }
 
-class WidgetdiecisieteState extends State<Widgetdiecisiete> {
+class WidUnoState extends State<WidUno> {
   bool _isFlat = true;
+  final Color _appBarColor = const Color(0xffc82663);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xffc82663),
+        backgroundColor: _appBarColor,
         title: const Text(
-          'Widget 17 - Elevación',
+          'Widget 16 - Efecto de Elevación',
           style: TextStyle(
             color: Colors.white,
             fontSize: 20.0,
           ),
         ),
         centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: Center(
         child: Column(
@@ -36,43 +41,36 @@ class WidgetdiecisieteState extends State<Widgetdiecisiete> {
               shadowColor: Colors.black,
               color: Colors.white,
               child: const SizedBox(
-                height: 150.0, // Aumenté ligeramente el tamaño
+                height: 150.0,
                 width: 150.0,
                 child: Icon(
                   Icons.android_outlined,
-                  size: 60, // Icono más grande
+                  size: 60,
+                  color: Color(0xffc82663),
                 ),
               ),
             ),
             const SizedBox(height: 30),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.orangeAccent,
-                foregroundColor: Colors.white,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+                backgroundColor: _appBarColor,
+                minimumSize: const Size(120, 45),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              child: const Text(
+                'Toggle Elevación',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                ),
               ),
               onPressed: () {
                 setState(() {
                   _isFlat = !_isFlat;
                 });
               },
-              child: const Text('Alternar Elevación'),
-            ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xffc82663),
-                minimumSize: const Size(150, 50),
-              ),
-              onPressed: () => Navigator.pop(context),
-              child: const Text(
-                'Volver',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                ),
-              ),
             ),
           ],
         ),
